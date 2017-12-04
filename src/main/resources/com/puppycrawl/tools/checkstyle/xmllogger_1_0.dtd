@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT checkstyle (file)*>
+<!ATTLIST checkstyle version CDATA #REQUIRED>
+
+<!ELEMENT file (error|exception)*>
+<!ATTLIST file name CDATA #REQUIRED>
+
+<!ELEMENT error EMPTY>
+<!ATTLIST error line CDATA #REQUIRED
+                column CDATA #IMPLIED
+                severity CDATA #REQUIRED
+                message CDATA #REQUIRED
+                source CDATA #REQUIRED>
+<!ELEMENT exception (#PCDATA)>
+<!ATTLIST exception>
